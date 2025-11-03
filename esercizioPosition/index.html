@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .container{
+
+            position: relative;
+            width: 350px;
+            height: 160px;
+            background: red;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        
+        }
+
+        .container img {
+
+            position: absolute;
+            width: 50%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            
+        }
+
+        .text_box {
+
+            position: absolute;
+            top: 20%;
+            left: 59%;
+            width: 40%;
+            color: white;
+        }
+
+        body {
+
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+step 1 : Vorrei una container con un immagine a sinistra del container
+             mentre a destra vorrei un titolo e una didascalia
+        - overflow : hidden; // al container che contiene l immagine     
+        - object-fit : contain; // proprietà immagine
+        - object-fit : cover;
+        - text-shadow // ombre 
+        - filter sull immagine 
+step 2 : vorrei 2 container allineati uno a fianco all altro uguali a quello appena creato
+-->
+
+
+    <div class="container">
+        <img src="https://media.istockphoto.com/id/2194166576/it/foto/tre-icone-di-accessibilit%C3%A0-sulla-tastiera-del-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=sR057Gj0EZ4bq8VVNVf-aROx2XDNL8b1WAiNYZb0JAI=" alt="">
+        <div class="text_box">
+            <h3>Titolo</h3>
+            <p>Breve didascalia</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://media.istockphoto.com/id/2194166576/it/foto/tre-icone-di-accessibilit%C3%A0-sulla-tastiera-del-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=sR057Gj0EZ4bq8VVNVf-aROx2XDNL8b1WAiNYZb0JAI=" alt="">
+        <div class="text_box">
+            <h3>Titolo</h3>
+            <p>Breve didascalia</p>
+        </div>
+    </div>
+
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>
